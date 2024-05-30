@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Assets/CalculatorLogo.png">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="text-center mt-5">Scientific Calculator</h1>
+        <div class="row ">
+            <div class="col-12 offset-md-3 col-md-6 ">
+                <div class="card">
+                    <div class="card-body">
+                        <input readonly placeholder="0" class="form-control form-control-lg text-end" id="calc-display"
+                            type="text" aria-label=".form-control-lg example">
+
+                        <!-- buttons -->
+                        <div class="row gx-1">
+                            <!-- FIRST ROW OF BTN's -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">(</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">)</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">%</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">AC</button>
+                            </div>
+
+                            <!-- 2'nd ROW  -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">7</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">8</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">9</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">÷</button>
+                            </div>
+
+                            <!-- 3'rd Row -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">4</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">5</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">6</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border"> ×</button>
+                            </div>
+
+                            <!-- 4'th Row -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">1</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">2</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">3</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">-</button>
+                            </div>
+
+                            <!-- 5'th row -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">0</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">.</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button"
+                                    class="btn btn-primary w-100 mt-2 border border-primary">=</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-secondary w-100 mt-2 border">+</button>
+                            </div>
+
+                            <!-- 6'th Row -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">sin</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">ln</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border ">π</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">cos</button>
+                            </div>
+
+                            <!-- 7'th Row -->
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">log</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">e</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border ">tan</button>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light w-100 mt-2 border">√</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SEPERATION LINE -->
+    <div class="seperation1 "></div>
+
+    <div class="heading">
+        <div>
+            <h3>How To Use</h3>
+        </div>
+    </div>
+
+    <!-- SEPERATION LINE -->
+    <div class="seperation"></div>
+
+    <!-- HOW TO USE -->
+    <div class="row">
+
+        <!-- ADDITION -->
+        <div class="col-12 mt-3 doc">
+            <h6>Addition -:</h6>
+            <ul>
+                <li>
+                    For example, to enter the number 2, press the 2 key.
+                </li>
+                <li>
+                    Press the addition operator (+) key.
+                </li>
+                <li>
+                    To enter the number 3, press the 3 key.
+                </li>
+                <li>
+                    Press the equals (=) key to display the result.
+                </li>
+            </ul>
+        </div>
+        <!-- SUBSTRACTION -->
+        <div class="col-12 mt-2 doc">
+            <h6>Substraction -:</h6>
+            <ul>
+                <li>
+                    For example, to enter the number 5, press the 5 key.
+                </li>
+                <li>
+                    Press the substraction operator (-) key.
+                </li>
+                <li>
+                    To enter the number 1, press the 1 key.
+                </li>
+                <li>
+                    Press the equals (=) key to display the result.
+                </li>
+            </ul>
+        </div>
+        <!-- MULTIPLICATION -->
+        <div class="col-12 mt-2 doc">
+            <h6>Multliplication -:</h6>
+            <ul>
+                <li>
+                    For example, to enter the number 8, press the 8 key.
+                </li>
+                <li>
+                    Press the multliplication operator (x) key.
+                </li>
+                <li>
+                    To enter the number 8, press the 8 key.
+                </li>
+                <li>
+                    Press the equals (=) key to display the result.
+                </li>
+            </ul>
+        </div>
+        <!-- DIVISION -->
+        <div class="col-12 mt-2 doc">
+            <h6>Division -:</h6>
+            <ul>
+                <li>
+                    For example, to enter the number 6, press the 6 key.
+                </li>
+                <li>
+                    Press the Division operator (÷) key.
+                </li>
+                <li>
+                    To enter the number 2, press the 2 key.
+                </li>
+                <li>
+                    Press the equals (=) key to display the result.
+                </li>
+            </ul>
+        </div>
+        <!-- PERCENTAGE -->
+        <div class="col-12 mt-2 doc">
+            <h6>Percentage -:</h6>
+            <ul>
+                <li>
+                    For example, to enter the number 6, press the 6 key.
+                </li>
+                <li>
+                    Press multliplication operator(x)
+                </li>
+                <li>
+                    To enter the number 2, press the 2 key.
+                </li>
+                <li>
+                    Press the percentage operator (%) key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to display the result.
+                </li>
+            </ul>
+        </div>
+
+        <!-- SIN -->
+        <div class="col-12 mt-2 doc">
+            <h6>sin -:</h6>
+            <ul>
+                <li>
+                    Press sin on calculator
+                </li>
+                <li>
+                    Open parentheses by pressing the '(' key.
+                </li>
+                <li>
+                    Enter the desired angle or number inside the parentheses.
+                </li>
+                <li>
+                    Close the parentheses by pressing the ')' key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the sin function.
+                </li>
+            </ul>
+        </div>
+
+        <!-- COS -->
+        <div class="col-12 mt-2 doc">
+            <h6>cos -:</h6>
+            <ul>
+                <li>
+                    Press cos on calculator
+                </li>
+                <li>
+                    Open parentheses by pressing the '(' key.
+                </li>
+                <li>
+                    Enter the desired angle or number inside the parentheses.
+                </li>
+                <li>
+                    Close the parentheses by pressing the ')' key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the cos function.
+                </li>
+            </ul>
+        </div>
+        <!-- TAN -->
+        <div class="col-12 mt-2 doc">
+            <h6>tan -:</h6>
+            <ul>
+                <li>
+                    Press tan on calculator
+                </li>
+                <li>
+                    Open parentheses by pressing the '(' key.
+                </li>
+                <li>
+                    Enter the desired angle or number inside the parentheses.
+                </li>
+                <li>
+                    Close the parentheses by pressing the ')' key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the tan function.
+                </li>
+            </ul>
+        </div>
+
+        <!-- natural logarithm -->
+        <div class="col-12 mt-2 doc">
+            <h6>Natural logarithm (ln)-:</h6>
+            <ul>
+                <li>
+                    Press ln on calculator
+                </li>
+                <li>
+                    Open parentheses by pressing the '(' key.
+                </li>
+                <li>
+                    Enter the desired number inside the parentheses.
+                </li>
+                <li>
+                    Close the parentheses by pressing the ')' key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the ln function.
+                </li>
+            </ul>
+        </div>
+
+        <!-- log -->
+        <div class="col-12 mt-2 doc">
+            <h6>log-:</h6>
+            <ul>
+                <li>
+                    Press log on calculator
+                </li>
+                <li>
+                    Open parentheses by pressing the '(' key.
+                </li>
+                <li>
+                    Enter the desired number inside the parentheses.
+                </li>
+                <li>
+                    Close the parentheses by pressing the ')' key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the log function.
+                </li>
+            </ul>
+        </div>
+
+        <!-- PI -->
+        <div class="col-12 mt-2 doc">
+            <h6>Pi (π)-:</h6>
+            <ul>
+                <li>
+                    Press π on calculator
+                </li>
+                <li>
+                    Press Multiplication operator(x);
+                </li>
+                <li>
+                    Press desired number on calculator.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the π function.
+                </li>
+            </ul>
+        </div>
+
+        <!-- E -->
+        <div class="col-12 mt-2 doc">
+            <h6>Euler's number-:</h6>
+            <ul>
+                <li>
+                    Press e on calculator
+                </li>
+                <li>
+                    Press desired number on calculator;
+                </li>
+                <li>
+                    Press multiplication operator(x);
+                </li>
+                <li>
+                    Press the equals (=) key to evaluate the e function.
+                </li>
+            </ul>
+        </div>
+
+        <!-- SQRT -->
+        <div class="col-12 mt-2 doc">
+            <h6>Square Root-:</h6>
+            <ul>
+                <li>
+                    Press √ on calculator
+                </li>
+                <li>
+                    Open parentheses by pressing the '(' key.
+                </li>
+                <li>
+                    Enter the desired number inside the parentheses.
+                </li>
+                <li>
+                    Close the parentheses by pressing the ')' key.
+                </li>
+
+                <li>
+                    Press the equals (=) key to evaluate the √ function.
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div><a href="https://www.linkedin.com/in/agrawaldeepak05/"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div><a href="https://github.com/Deepakscripts"><i class="fa-brands fa-github"></i></a></div>
+        <div><a href="https://twitter.com/Agrawaldeepak02"><i class="fa-brands fa-x-twitter"></i></a></div>
+    </div>
+
+
+    <!-- BOOTSTRAP SCRIPT LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- OUR SCRIPT TAG -->
+    <script src="main.js"></script>
+</body>
+
+</html>

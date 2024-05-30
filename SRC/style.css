@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black !important;
+    color: white !important;
+}
+
+.seperation1 {
+    width: 100% !important;
+    margin-top: 40px;
+    height: 2px !important;
+    background-color: white;
+}
+
+.seperation {
+    width: 100% !important;
+
+    height: 2px !important;
+    background-color: white;
+}
+
+.heading {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 10px;
+}
+
+.doc {
+    padding-left: 4% !important;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 10vh;
+    border-top: 2px solid white;
+    margin-top: 10px;
+    bottom: 0;
+    
+}
+
+.footer div {
+    cursor: pointer;
+    opacity: 0.6;
+
+}
+
+.footer div a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer div:hover {
+    opacity: 1;
+}
